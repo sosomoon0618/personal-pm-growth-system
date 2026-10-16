@@ -1,0 +1,8 @@
+# Local credentials and runtime residue must never be synced.
+.env
+.env.*
+*.token
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
