@@ -15,6 +15,8 @@ description: "Operate the personal product capability and interview growth syste
 
 每次先读取 [`references/system-map.md`](references/system-map.md)，根据当前任务只读取其中指向的必要文档或 Base 表。涉及新增、修改或关联任一资产时，再读取 [`references/update-gate.md`](references/update-gate.md)。
 
+涉及本系统本地控制文档或本 Skill 的已确认写入时，再读取 [`references/github-sync.md`](references/github-sync.md)。该参考仅规定受控同步到 GitHub 的条件与边界，不授权其他本地资料进入仓库。
+
 不要凭记忆使用表 ID、字段选项或目录层级；写入前读取目标表当前 schema 和目标文档当前正文。系统地图只提供入口和对象职责，不取代实时核验。
 
 ## 工作模式
@@ -44,6 +46,7 @@ description: "Operate the personal product capability and interview growth syste
 4. 如发现可沉淀内容，给出“目标资产、拟写入内容、不会改动什么、风险”的最小更新提案。
 5. 只有用户明确确认该写入范围后，才创建、编辑或关联文档／Base 记录；写后回读目标正文、字段与关联并对照验收条件。
 6. 若变更会新增／删除核心表、字段、目录层级、Skill 或改变既有对象职责，停止写入，提交架构变更提案。
+7. 若本轮产生已确认且已验证的本地系统变更，按 Git 同步参考完成受限范围的提交与推送；任何范围外改动、冲突或认证异常都停止并报告，不自行处理。
 
 ## 输出要求
 
