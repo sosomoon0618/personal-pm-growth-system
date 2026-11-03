@@ -6,3 +6,7 @@
 *.tmp
 Thumbs.db
 .DS_Store
+
+# Locally generated Feishu drafting and device-auth artifacts.
+draft_*_folder/
+seekee-search-auth*.png
